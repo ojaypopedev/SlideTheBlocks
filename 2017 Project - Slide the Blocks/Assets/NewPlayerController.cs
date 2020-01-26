@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class NewPlayerController : MonoBehaviour {
 
 
-
     public bool MOVE = false;
 
     private readonly Vector3 rayDirection = new Vector3(0, -1, 0);
@@ -61,6 +60,7 @@ public class NewPlayerController : MonoBehaviour {
         if(transform.position.y < -10)
         {
             FindObjectOfType<GameManager>().EndGame();
+            FindObjectOfType<HighScoreManager>().testScore(PlayerScore);
         }
 
 
