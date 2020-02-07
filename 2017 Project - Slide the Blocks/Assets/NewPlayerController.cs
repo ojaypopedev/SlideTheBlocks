@@ -80,7 +80,7 @@ public class NewPlayerController : MonoBehaviour {
        // print("FW: "+(forwardDirection.normalized * getSpeed()).ToString());
        // print("SP: "+ getSpeed().ToString());
         float radius = GetComponent<SphereCollider>().radius;
-        print("RADIUS: " + radius);
+       // print("RADIUS: " + radius);
         
         transform.Rotate((getSpeed()/(2*radius*Mathf.PI))*360, 0, 0);
     }
