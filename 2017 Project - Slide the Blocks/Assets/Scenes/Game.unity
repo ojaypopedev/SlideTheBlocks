@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465937, g: 0.49643105, b: 0.57482326, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -501,7 +501,7 @@ Light:
       e33: 1
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 1
+  m_DrawHalo: 0
   m_Flare: {fileID: 12100000, guid: 09ebe82dbd1113c3d000dc0b8d76c639, type: 2}
   m_RenderMode: 0
   m_CullingMask:
@@ -525,8 +525,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387589281}
-  m_LocalRotation: {x: 0.029208083, y: 0.38960913, z: -0.7245912, w: -0.56773174}
-  m_LocalPosition: {x: 105.32, y: 26.9, z: -5.09}
+  m_LocalRotation: {x: 0.24005736, y: -0.21905881, z: 0.05570175, w: 0.9440779}
+  m_LocalPosition: {x: 4.7239733, y: 8.802656, z: -9.571981}
   m_LocalScale: {x: 2.5210981, y: 2.4323764, z: 2.1682394}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5683,30 +5683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b281e1c3ecaf483c9d88530518e686d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 902272029}
-  SpeedUpTimer: 0
-  forwardForce: 5
-  thrust: 0
-  DistanceTravelled: 0
-  playerState: rolling
-  DebugOn: 0
-  SpeedUp: 0
-  scoreText: {fileID: 1578718986}
-  HighScoreText: {fileID: 567739856}
-  EveryTimeScoreIncreases:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1303645204}
-        m_MethodName: UpdateFloorTile
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &902272031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6043,31 +6019,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc114e292ae9d43eca390bf283792de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FloorPrefab: {fileID: 0}
-  FloorThickness: 2
-  StartSpawn: {fileID: 0}
-  CurrentMaterialNumber: 0
-  ColorMaterialTotal: 100
-  colormanager: {fileID: 1610063027}
-  floorSpawningMode: 1
-  ChanceToRandomize: 0.3
-  MinSpawnDistance: -7
-  CenterSpawnDistance: -0.1100001
-  MaxSpawnDistance: 5
-  SpawnDistanceAhead: 14
-  CompStartsAt_1_a: 100
-  CompStartsAt_1_b: 1000
-  CompStartsAt_1_c: 10000
-  CompStartsAt_1_d: 100000
-  CompStartsAt_1_e: 1000000
-  CompStartsAt_2_a: 1000
-  CompStartsAt_2_b: 10000
-  CompStartsAt_2_c: 100000
-  CompStartsAt_2_d: 1000000
-  CompStartsAt_2_e: 10000000
-  StartingComposition: 020000000300000004000000040000000000000000000000000000000000000000000000000000000000000001000000010000000100000001000000
-  Composition_1: f8fffffffcffffffffffffff02000000060000000a0000000a000000030000000300000003000000
-  Composition_2: fdfffffffdfffffffdfffffffdfffffffdfffffffdfffffffdfffffffdfffffffdfffffffdffffff
 --- !u!114 &1303645205
 MonoBehaviour:
   m_ObjectHideFlags: 0
